@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm NIK Banner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            padding: 16px 20px;
+            border-radius: 8px;
+            background: linear-gradient(to right, #3B0940, #750981);
+            color: white;
+            position: relative;
+            max-width: 400px;
+            overflow: hidden;
+        }
+
+        .container::after {
+            content: '';
+            background-image: url('img_confirm_nik_ornament.webp');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            border-top-right-radius: 8px;
+        }
+
+        .container h2 {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .container p {
+            font-size: 12px;
+            margin: 8px 0 16px;
+            line-height: 1.5;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .input-container span {
+            font-size: 12px;
+            padding: 8px;
+            flex: 1;
+            color: black;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            background-color: #750981;
+            color: white;
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Konfirmasi Nomor KTP</h2>
+        <p>Untuk menggunakan produk AmarthaFin yang Anda gunakan</p>
+        
+        <div class="input-container">
+            <span>Masukkan nomor KTP</span>
+            <div class="button">&rarr;</div>
+        </div>
+    </div>
+</body>
+</html>
